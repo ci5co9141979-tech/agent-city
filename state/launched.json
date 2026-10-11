@@ -283,6 +283,184 @@
     "Install guide for Resolve, Premiere and Final Cut"
    ],
    "license": "Personal and commercial use in your own video projects. No resale or redistribution of the LUT files."
+  },
+  "print_reading": {
+   "category": "Classroom & Homeschool Printables",
+   "name": "Reading Log & Book Tracker Printable Set",
+   "module": "printable_pack",
+   "family": "printables",
+   "price": 12,
+   "buyer": "teachers and parents tracking reading minutes and books read",
+   "angle": "Daily reading log, book tracker, weekly minutes chart, book report page and goals checklist.",
+   "keywords": [
+    "reading log printable",
+    "book tracker",
+    "reading minutes chart",
+    "book report template",
+    "homework reading log"
+   ],
+   "spec": {
+    "pack_name": "Reading Log & Book Tracker Set",
+    "files": [
+     {
+      "file": "1_Reading_Log.pdf",
+      "pages": [
+       {
+        "type": "log",
+        "title": "Daily Reading Log",
+        "sub": "Write the date, book, pages and minutes each day.",
+        "cols": [
+         [
+          "Date",
+          1
+         ],
+         [
+          "Book title",
+          3
+         ],
+         [
+          "Pages read",
+          1.2
+         ],
+         [
+          "Minutes",
+          1
+         ],
+         [
+          "Initials",
+          1
+         ]
+        ],
+        "rows": 24
+       }
+      ]
+     },
+     {
+      "file": "2_Book_Tracker.pdf",
+      "pages": [
+       {
+        "type": "log",
+        "title": "Books I've Read",
+        "sub": "Rate each book from 1 to 5 stars.",
+        "cols": [
+         [
+          "#",
+          0.5
+         ],
+         [
+          "Title",
+          3
+         ],
+         [
+          "Author",
+          2
+         ],
+         [
+          "Date finished",
+          1.3
+         ],
+         [
+          "Rating",
+          1
+         ]
+        ],
+        "rows": 24
+       }
+      ]
+     },
+     {
+      "file": "3_Weekly_Reading_Minutes.pdf",
+      "pages": [
+       {
+        "type": "grid",
+        "title": "Weekly Reading Minutes",
+        "sub": "Write the minutes you read each day.",
+        "first": "Week of",
+        "cols": [
+         "Mon",
+         "Tue",
+         "Wed",
+         "Thu",
+         "Fri",
+         "Sat",
+         "Sun"
+        ],
+        "items": [
+         "Week 1",
+         "Week 2",
+         "Week 3",
+         "Week 4",
+         "Week 5",
+         "Week 6",
+         "Week 7",
+         "Week 8",
+         "Week 9",
+         "Week 10"
+        ],
+        "circles": false
+       }
+      ]
+     },
+     {
+      "file": "4_Book_Report.pdf",
+      "pages": [
+       {
+        "type": "lined",
+        "title": "Book Report",
+        "sub": "Fill in each section.",
+        "prompts": [
+         "Title and author",
+         "Characters and setting",
+         "What happened (beginning, middle, end)",
+         "My favorite part and why",
+         "Would I recommend it? Why or why not?"
+        ],
+        "lines_each": 3
+       }
+      ]
+     },
+     {
+      "file": "5_Reading_Goals.pdf",
+      "pages": [
+       {
+        "type": "checklist",
+        "title": "My Reading Goals",
+        "sub": "Check off each goal as you reach it.",
+        "sections": [
+         {
+          "h": "This month",
+          "items": [
+           "Read 20 minutes every day",
+           "Finish one chapter book",
+           "Try a new genre",
+           "Read to someone"
+          ]
+         },
+         {
+          "h": "This year",
+          "items": [
+           "Read 25 books",
+           "Visit the library every month",
+           "Write 5 book reviews",
+           "Re-read an old favorite"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "kind": "printable",
+   "deliverables": [
+    "Reading Log (PDF)",
+    "Book Tracker (PDF)",
+    "Weekly Reading Minutes (PDF)",
+    "Book Report (PDF)",
+    "Reading Goals (PDF)",
+    "US Letter, print at 100%"
+   ],
+   "license": "Personal and classroom/homeschool use. No resale or redistribution of the files."
   }
  },
  "history": [
@@ -301,6 +479,14 @@
    ],
    "date": "2026-10-11",
    "key": "lut_wedding"
+  },
+  {
+   "week": [
+    2026,
+    41
+   ],
+   "date": "2026-10-11",
+   "key": "print_reading"
   }
  ]
 }
