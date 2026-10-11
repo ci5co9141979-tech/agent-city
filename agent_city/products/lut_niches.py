@@ -1,0 +1,86 @@
+"""Niche LUT packs the weekly ideator can ship. Each look is a parameter dict for luts.grade().
+split = (shadow_rgb_shift, highlight_rgb_shift): small additive tints."""
+
+TEAL_OR = ((-0.02, 0.01, 0.03), (0.03, 0.012, -0.03))
+NICHES = {
+    "wedding_vintage": {
+        "name": "Vintage Wedding Film LUT Pack (8 looks, .cube)",
+        "short": "Wedding", "price": 29,
+        "buyer": "wedding photographers and videographers who want a soft, timeless film feel",
+        "angle": "Eight film-inspired looks for ceremonies, portraits and receptions: creamy skin, gentle fade, protected whites on the dress.",
+        "keywords": ["wedding LUT", "film look LUT", "vintage wedding video", "davinci resolve wedding LUT", "cube LUT pack"],
+        "looks": {
+            "01_Soft_Ivory": ("Airy, creamy whites that keep dress detail.", dict(exp=0.12, contrast=0.96, sat=0.92, temp=0.05, lift=0.05, fade=0.03, roll=0.5)),
+            "02_Warm_Kodak": ("Warm highlights with a hint of cool shadow, classic stock feel.", dict(exp=0.04, contrast=1.08, sat=1.05, temp=0.10, fade=0.04, roll=0.4, split=((-0.01, 0.01, 0.02), (0.03, 0.015, -0.02)))),
+            "03_Faded_Film": ("Lifted blacks and muted color for a nostalgic mood.", dict(exp=0.05, contrast=0.90, sat=0.85, temp=0.04, fade=0.07, roll=0.5)),
+            "04_Golden_Vows": ("Golden hour glow for outdoor ceremonies.", dict(exp=0.03, contrast=1.10, sat=1.08, temp=0.14, roll=0.5, sky=0.06)),
+            "05_Dusty_Rose": ("Soft pink-leaning highlights, flattering on skin.", dict(exp=0.08, contrast=1.0, sat=0.92, temp=0.05, tint=0.02, fade=0.03, roll=0.5, split=((0, 0, 0.01), (0.02, 0.0, 0.01)))),
+            "06_Matte_Bride": ("Clean matte finish, restrained saturation.", dict(exp=0.15, contrast=1.0, sat=0.80, fade=0.06, roll=0.6)),
+            "07_Candlelit_Reception": ("Warm, rich low-light reception look.", dict(exp=-0.04, contrast=1.15, sat=1.0, temp=0.14, wood=0.10, roll=0.4)),
+            "08_Black_And_White_Classic": ("Timeless monochrome with a gentle S-curve.", dict(exp=0.0, contrast=1.18, sat=0.0, fade=0.02, roll=0.5)),
+        }},
+    "travel_cinematic": {
+        "name": "Cinematic Travel LUT Pack (8 looks, .cube)",
+        "short": "Travel", "price": 29,
+        "buyer": "travel vloggers, drone pilots and hybrid shooters editing destination films",
+        "angle": "Eight cinematic looks for cities, deserts, coasts and mountains with controlled skies and rich but natural color.",
+        "keywords": ["travel LUT", "cinematic LUT", "drone LUT pack", "teal and orange LUT", "davinci resolve travel LUT"],
+        "looks": {
+            "01_Subtle_Teal_Orange": ("Restrained teal shadows and warm highlights.", dict(exp=0.02, contrast=1.14, sat=1.06, roll=0.45, split=TEAL_OR)),
+            "02_Desert_Gold": ("Warm sand tones, deeper sky.", dict(exp=0.0, contrast=1.15, sat=1.05, temp=0.12, wood=0.12, sky=0.10, roll=0.5)),
+            "03_Tropical_Pop": ("Vivid water and foliage that stay believable.", dict(exp=0.04, contrast=1.10, sat=1.14, temp=0.02, sky=0.16, green=0.14, roll=0.45)),
+            "04_Nordic_Cool": ("Cool, crisp light for northern landscapes.", dict(exp=0.03, contrast=1.10, sat=0.92, temp=-0.09, sky=0.06, roll=0.4)),
+            "05_City_Night": ("Contrasty night streets with cool shadows and warm lights.", dict(exp=-0.04, contrast=1.22, sat=1.08, roll=0.5, split=((-0.015, 0.0, 0.035), (0.03, 0.01, -0.02)))),
+            "06_Sunset_Glow": ("Warm sunsets without clipped skies.", dict(exp=0.0, contrast=1.14, sat=1.12, temp=0.15, tint=0.01, roll=0.6, sky=0.06)),
+            "07_Misty_Mountain": ("Soft, hazy depth with muted greens.", dict(exp=0.04, contrast=0.98, sat=0.86, temp=-0.04, fade=0.05, sky=0.08, roll=0.5)),
+            "08_Street_Film": ("Gritty film-style street look.", dict(exp=0.0, contrast=1.18, sat=0.94, fade=0.03, roll=0.4, split=((-0.01, 0.005, 0.015), (0.02, 0.01, -0.01)))),
+        }},
+    "food_cafe": {
+        "name": "Food & Cafe Video LUT Pack (8 looks, .cube)",
+        "short": "Food", "price": 24,
+        "buyer": "restaurant owners, cafe marketers and food videographers",
+        "angle": "Eight looks that make plates, drinks and dining rooms look fresh and appetizing without turning skin tones orange.",
+        "keywords": ["food video LUT", "restaurant LUT", "cafe video look", "appetizing LUT", "cube LUT pack"],
+        "looks": {
+            "01_Warm_Appetite": ("Warm, inviting tones for cooked dishes.", dict(exp=0.05, contrast=1.08, sat=1.12, temp=0.08, wood=0.10, roll=0.4)),
+            "02_Fresh_Greens": ("Crisp salads, herbs and produce.", dict(exp=0.06, contrast=1.08, sat=1.10, temp=0.0, green=0.20, roll=0.4)),
+            "03_Bright_Brunch": ("Light, airy daylight cafe look.", dict(exp=0.16, contrast=0.98, sat=1.02, temp=0.03, lift=0.03, roll=0.4)),
+            "04_Moody_Dinner": ("Rich, dark restaurant ambience.", dict(exp=-0.05, contrast=1.20, sat=1.02, temp=0.07, wood=0.08, roll=0.5)),
+            "05_Bakery_Golden": ("Golden crusts and warm light.", dict(exp=0.04, contrast=1.06, sat=1.08, temp=0.12, wood=0.14, roll=0.4)),
+            "06_Cocktail_Bar": ("Contrasty bar lighting with cool-warm separation.", dict(exp=-0.02, contrast=1.18, sat=1.08, roll=0.5, split=((-0.01, 0.005, 0.025), (0.025, 0.01, -0.015)))),
+            "07_Clean_Product": ("Neutral, true-color packshot look.", dict(exp=0.08, contrast=1.06, sat=1.0, roll=0.3)),
+            "08_Rustic_Farm": ("Earthy farm-to-table warmth with a touch of fade.", dict(exp=0.02, contrast=1.04, sat=0.96, temp=0.06, fade=0.03, green=0.06, roll=0.4)),
+        }},
+    "portrait_moody": {
+        "name": "Moody Portrait & Lifestyle LUT Pack (8 looks, .cube)",
+        "short": "Portrait", "price": 29,
+        "buyer": "portrait and lifestyle videographers and content creators",
+        "angle": "Eight deep, flattering looks with controlled contrast and gentle skin-friendly color.",
+        "keywords": ["moody LUT", "portrait LUT", "lifestyle video LUT", "cinematic portrait", "cube LUT pack"],
+        "looks": {
+            "01_Deep_Shadow": ("Rich shadows with soft highlight roll-off.", dict(exp=-0.03, contrast=1.22, sat=0.98, roll=0.55)),
+            "02_Warm_Window": ("Warm window-light portraits.", dict(exp=0.0, contrast=1.12, sat=1.0, temp=0.09, roll=0.5)),
+            "03_Cool_Noir": ("Cool, desaturated, dramatic.", dict(exp=-0.02, contrast=1.20, sat=0.80, temp=-0.07, roll=0.55, split=((-0.01, 0.0, 0.02), (0.0, 0.0, 0.0)))),
+            "04_Soft_Matte": ("Matte blacks with gentle color.", dict(exp=0.04, contrast=1.0, sat=0.88, fade=0.06, roll=0.5)),
+            "05_Film_Portrait": ("Slight grain-style tonality via fade and split tone.", dict(exp=0.02, contrast=1.10, sat=0.96, fade=0.04, roll=0.5, split=((-0.01, 0.005, 0.015), (0.025, 0.01, -0.015)))),
+            "06_Golden_Skin": ("Warm, glowing skin tones.", dict(exp=0.05, contrast=1.06, sat=1.02, temp=0.11, roll=0.5)),
+            "07_Urban_Teal": ("Modern teal-leaning street portrait.", dict(exp=0.0, contrast=1.16, sat=1.0, roll=0.5, split=TEAL_OR)),
+            "08_Monochrome_Moody": ("Dark, contrasty black and white.", dict(exp=-0.03, contrast=1.25, sat=0.0, roll=0.55)),
+        }},
+    "creator_vlog": {
+        "name": "YouTuber & Vlog LUT Pack (8 looks, .cube)",
+        "short": "Vlog", "price": 24,
+        "buyer": "YouTubers and creators who film at a desk, at home or outdoors",
+        "angle": "Eight clean, bright looks for talking-head, tech and lifestyle videos that read well on phones.",
+        "keywords": ["youtube LUT", "vlog LUT", "creator LUT pack", "talking head LUT", "cube LUT pack"],
+        "looks": {
+            "01_Clean_Pop": ("Bright and punchy for general vlogs.", dict(exp=0.08, contrast=1.12, sat=1.10, roll=0.4)),
+            "02_Bright_Vlogger": ("High-key, friendly daylight look.", dict(exp=0.16, contrast=1.0, sat=1.04, temp=0.03, lift=0.03, roll=0.4)),
+            "03_Gaming_Room": ("Cool, saturated look for RGB-lit rooms.", dict(exp=0.0, contrast=1.16, sat=1.14, temp=-0.04, roll=0.5, split=((-0.01, 0.0, 0.03), (0.01, 0.0, 0.01)))),
+            "04_Warm_Studio": ("Warm, cozy studio feel.", dict(exp=0.05, contrast=1.06, sat=1.04, temp=0.09, wood=0.08, roll=0.4)),
+            "05_Soft_Skin": ("Lower contrast and gentle saturation for flattering faces.", dict(exp=0.07, contrast=0.96, sat=0.94, temp=0.03, lift=0.04, roll=0.5)),
+            "06_Tech_Review": ("Neutral, crisp, true-to-product color.", dict(exp=0.06, contrast=1.10, sat=1.0, temp=-0.02, roll=0.3)),
+            "07_Outdoor_Adventure": ("Vivid sky and greens for outdoor vlogs.", dict(exp=0.02, contrast=1.14, sat=1.10, sky=0.14, green=0.10, roll=0.5)),
+            "08_Lifestyle_Soft": ("Muted lifestyle look with a touch of fade.", dict(exp=0.06, contrast=0.98, sat=0.90, temp=0.03, fade=0.03, roll=0.5)),
+        }},
+}

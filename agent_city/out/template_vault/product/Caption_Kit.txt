@@ -1,0 +1,35 @@
+CAPTION KIT: swap {braces} with your own words. Mix any opener + body + CTA.
+
+OPENERS
+  1. Here's the truth about {topic}:
+  2. If you're struggling with {goal}, read this.
+  3. Save this for later: {topic} edition.
+  4. I used to think {topic} was complicated. Then I learned this.
+  5. Stop scrolling. 30 seconds on {goal}.
+  6. The one thing I'd change about how I approached {topic}:
+  7. New from {brand}:
+  8. Quick question for my {customer} people:
+  9. Behind the scenes at {brand} today.
+  10. Reminder: you do not need to be perfect to {goal}.
+
+BODY FORMULAS
+  A. Problem > Why it happens > Fix > Result
+  B. Story (2 lines) > Lesson > How to apply it
+  C. 3 tips in a list, one line each
+  D. Before / After / How
+  E. Myth / Truth / Proof
+
+CALLS TO ACTION
+  1. Save this post and send it to a friend.
+  2. Comment 'YES' and I'll send the details.
+  3. Link in bio.
+  4. Reply and tell me what you'd add.
+  5. Follow for more {topic} tips.
+  6. DM me the word START.
+  7. Tap the link to see what's inside.
+  8. What's your biggest question? Drop it below.
+
+HASHTAG BUCKETS (pick 3 + 3 + 3)
+  Niche (under 100k posts): your topic + city + audience
+  Mid (100k-1M): your category
+  Broad (1M+): small business, entrepreneur, creator

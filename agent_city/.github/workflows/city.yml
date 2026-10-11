@@ -1,0 +1,26 @@
+name: agent-city-weekly
+on:
+  schedule: [{cron: "0 13 * * 1"}]   # every Monday 13:00 UTC = 8am US Central (CDT)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils libreoffice-calc fonts-inter
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - name: Build this week's product (Muse picks it, the team builds it)
+        run: python run.py --weekly
+        env: {ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}"}
+      - name: Remember what was launched
+        run: |
+          git config user.name "agent-city"; git config user.email "agent-city@users.noreply.github.com"
+          git add state/launched.json && git commit -m "weekly product launched" || true
+          git push || true
+      - uses: actions/upload-artifact@v4
+        with: {name: weekly-launch-kit, path: "out/", retention-days: 90}

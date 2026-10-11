@@ -1,0 +1,41 @@
+REAL ESTATE VIDEO LUT PACK - INSTALL GUIDE
+==========================================
+
+WHAT'S INSIDE
+  RE_01_Bright_Airy.cube - Lifted, clean, high-key interiors. Best for light rooms.
+  RE_02_Warm_Home.cube - Inviting warm whites and honey wood tones for family homes.
+  RE_03_Crisp_Neutral.cube - True-to-life neutral. Fixes dull camera profiles without a look.
+  RE_04_Luxury_Contrast.cube - Deeper blacks and rich contrast for high-end listings.
+  RE_05_Modern_Cool.cube - Clean cool whites for contemporary, minimal, glass-heavy spaces.
+  RE_06_Golden_Hour_Exterior.cube - Warm sunset exteriors without burning the sky.
+  RE_07_Blue_Sky_Pop.cube - Punchy exterior daylight: richer blue sky, green lawns, safe whites.
+  RE_08_Drone_Clear.cube - Cuts aerial haze and boosts clarity for drone footage.
+  RE_09_Soft_Film.cube - Gentle filmic roll-off and muted saturation for lifestyle walkthroughs.
+  RE_10_Log_To_Rec709_Base.cube - Neutral starting point for flat/log footage (S-curve + saturation restore).
+
+All LUTs are standard 33-point .cube files designed for Rec.709 footage.
+preview_strip.png shows each look on a synthetic test scene (sky, lawn,
+white wall, wood floor, gray ramp). Your own footage will differ.
+
+DAVINCI RESOLVE
+  1. Copy the LUTs folder into:
+     Mac:     /Library/Application Support/Blackmagic Design/DaVinci Resolve/LUT/
+     Windows: C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\LUT\
+  2. Resolve > Preferences > Color Management > Update Lists
+  3. Color page > right-click a node > LUT > pick a look from this pack
+
+PREMIERE PRO
+  Lumetri Color > Creative > Look > Browse... and pick a .cube file.
+
+FINAL CUT PRO
+  Use the Custom LUT effect (Inspector > Choose Custom LUT) or a free LUT utility.
+
+TIPS
+  * Expose correctly first. A LUT is a finishing step, not a rescue tool.
+  * Set white balance on a white wall BEFORE applying a look.
+  * Drop the LUT intensity (Resolve: node Key gain; Premiere: Intensity slider) to 60-80% if it feels strong.
+  * These LUTs assume Rec.709 footage. For log footage, convert to Rec.709 first (or use your camera's official conversion LUT), then add a look.
+  * Check the sky and whites on a scope; every look rolls highlights off gently but your footage may already be clipped.
+
+LICENSE
+  Personal and commercial use in your own video projects. No resale or redistribution of the LUT files.

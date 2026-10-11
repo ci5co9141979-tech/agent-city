@@ -1,0 +1,36 @@
+WEDDING FILM LUT PACK - INSTALL GUIDE
+==================================================
+
+WHAT'S INSIDE
+  WED_01_Soft_Romantic.cube - Lifted blacks, gentle contrast, creamy highlights.
+  WED_02_Timeless_Neutral.cube - True color, light contrast. Safe on every skin tone.
+  WED_03_Warm_Golden_Ceremony.cube - Honey warmth for outdoor golden-hour vows.
+  WED_04_Bright_Airy.cube - High-key, clean, pastel-friendly.
+  WED_05_Moody_Candlelight.cube - Deeper shadows and warm practicals for evening receptions.
+  WED_06_Film_Fade.cube - Matte blacks and soft saturation, nostalgic film feel.
+  WED_07_Pastel_Garden.cube - Gentle greens and sky, airy florals.
+  WED_08_Classic_Black_and_White.cube - Rich monochrome with smooth highlights.
+
+Built around natural skin tones and clean whites for wedding dresses.
+
+All LUTs are standard 33-point .cube files for Rec.709 footage.
+preview_strip.png shows each look on a synthetic test frame (sky, lawn, white wall,
+wood, gray, three skin tones, three food colors, gray ramp). Your footage will differ.
+
+DAVINCI RESOLVE
+  1. Copy the LUTs folder to:
+     Mac:     /Library/Application Support/Blackmagic Design/DaVinci Resolve/LUT/
+     Windows: C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\LUT\
+  2. Resolve > Preferences > Color Management > Update Lists
+  3. Color page > right-click a node > LUT > pick a look
+PREMIERE PRO: Lumetri Color > Creative > Look > Browse... > choose a .cube
+FINAL CUT PRO: Inspector > Custom LUT effect > Choose Custom LUT
+
+TIPS
+  * Expose and white-balance first. A LUT is a finishing step, not a rescue tool.
+  * Lower the LUT intensity to 60-80% if a look feels strong.
+  * Check skin tones and highlights on a scope; adjust per shot.
+  * Footage already clipped or very flat/log needs a conversion LUT before these looks.
+
+LICENSE
+  Personal and commercial use in your own video projects. No resale or redistribution of the LUT files.

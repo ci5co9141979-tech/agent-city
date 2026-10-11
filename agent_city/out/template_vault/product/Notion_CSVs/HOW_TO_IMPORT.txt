@@ -1,0 +1,1 @@
+In Notion: sidebar > Import > CSV. Repeat for each file. Change the Status/Platform/Pillar columns to Select properties after import.

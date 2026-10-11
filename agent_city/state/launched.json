@@ -1,0 +1,306 @@
+{
+ "entries": {
+  "calc_listingprofit": {
+   "category": "AI Micro Apps",
+   "name": "ListingProfit - Marketplace Fee & Profit Calculator",
+   "module": "calc_app",
+   "family": "micro_app",
+   "price": 47,
+   "buyer": "Etsy, eBay and online-shop sellers who don't know their real profit per sale",
+   "angle": "Enter price, costs and fees; see profit per sale, margin, monthly profit and the break-even price.",
+   "keywords": [
+    "etsy fee calculator",
+    "profit margin calculator",
+    "seller profit calculator",
+    "break even price",
+    "online shop pricing"
+   ],
+   "spec": {
+    "title": "ListingProfit",
+    "tagline": "Know your real profit per sale before you set the price.",
+    "notes": "Fee rates change and differ by platform and country. Edit the fee fields to match your platform's current published fees.",
+    "inputs": [
+     {
+      "id": "price",
+      "label": "Item price",
+      "value": 28,
+      "prefix": "$",
+      "step": 0.01
+     },
+     {
+      "id": "ship_in",
+      "label": "Shipping charged to buyer",
+      "value": 4,
+      "prefix": "$",
+      "step": 0.01
+     },
+     {
+      "id": "cogs",
+      "label": "Cost to make / buy the item",
+      "value": 7,
+      "prefix": "$",
+      "step": 0.01
+     },
+     {
+      "id": "ship_out",
+      "label": "Your actual shipping + packaging cost",
+      "value": 4.5,
+      "prefix": "$",
+      "step": 0.01
+     },
+     {
+      "id": "fee_pct",
+      "label": "Marketplace fee (% of sale + shipping)",
+      "value": 6.5,
+      "suffix": "%",
+      "step": 0.1
+     },
+     {
+      "id": "pay_pct",
+      "label": "Payment processing %",
+      "value": 3,
+      "suffix": "%",
+      "step": 0.1
+     },
+     {
+      "id": "pay_fixed",
+      "label": "Payment processing fixed fee",
+      "value": 0.25,
+      "prefix": "$",
+      "step": 0.01
+     },
+     {
+      "id": "list_fee",
+      "label": "Listing fee per sale",
+      "value": 0.2,
+      "prefix": "$",
+      "step": 0.01
+     },
+     {
+      "id": "ad_pct",
+      "label": "Advertising (% of price)",
+      "value": 0,
+      "suffix": "%",
+      "step": 0.1
+     },
+     {
+      "id": "units",
+      "label": "Sales per month",
+      "value": 60,
+      "step": 1
+     }
+    ],
+    "vars": [
+     {
+      "id": "revenue",
+      "expr": "price + ship_in"
+     },
+     {
+      "id": "f",
+      "expr": "(fee_pct + pay_pct) / 100"
+     },
+     {
+      "id": "fees",
+      "expr": "revenue * f + pay_fixed + list_fee"
+     },
+     {
+      "id": "ads",
+      "expr": "price * ad_pct / 100"
+     },
+     {
+      "id": "profit",
+      "expr": "revenue - fees - ads - cogs - ship_out"
+     }
+    ],
+    "outputs": [
+     {
+      "label": "Total fees per sale",
+      "expr": "fees",
+      "fmt": "money"
+     },
+     {
+      "label": "Profit per sale",
+      "expr": "profit",
+      "fmt": "money",
+      "big": true
+     },
+     {
+      "label": "Profit margin (of price)",
+      "expr": "price > 0 ? profit / price * 100 : 0",
+      "fmt": "pct"
+     },
+     {
+      "label": "Monthly profit",
+      "expr": "profit * units",
+      "fmt": "money"
+     },
+     {
+      "label": "Break-even price",
+      "expr": "(cogs + ship_out + pay_fixed + list_fee - ship_in * (1 - f)) / (1 - f - ad_pct / 100)",
+      "fmt": "money"
+     }
+    ]
+   },
+   "kind": "calc",
+   "deliverables": [
+    "Single-file calculator app (works offline in any browser)",
+    "README with setup notes"
+   ],
+   "license": "Use for your own business. No resale or redistribution of the app."
+  },
+  "lut_wedding": {
+   "category": "Niche Presets & Video LUTs",
+   "name": "Wedding Film LUT Pack (8 looks, .cube)",
+   "module": "lut_niche",
+   "family": "luts",
+   "price": 24,
+   "buyer": "wedding videographers who want consistent, skin-safe looks without hours of grading",
+   "angle": "Eight looks from soft romantic to timeless neutral, built to keep skin natural and dresses clean.",
+   "keywords": [
+    "wedding LUT",
+    "wedding video LUT",
+    "davinci resolve wedding",
+    "skin tone LUT",
+    "romantic film LUT"
+   ],
+   "spec": {
+    "pack_name": "Wedding Film LUT Pack",
+    "prefix": "WED",
+    "intro": "Built around natural skin tones and clean whites for wedding dresses.",
+    "looks": [
+     {
+      "name": "Soft Romantic",
+      "desc": "Lifted blacks, gentle contrast, creamy highlights.",
+      "params": {
+       "exp": 0.1,
+       "contrast": 0.95,
+       "sat": 0.94,
+       "temp": 0.04,
+       "tint": 0.0,
+       "lift": 0.05,
+       "roll": 0.5
+      }
+     },
+     {
+      "name": "Timeless Neutral",
+      "desc": "True color, light contrast. Safe on every skin tone.",
+      "params": {
+       "exp": 0.04,
+       "contrast": 1.06,
+       "sat": 1.0,
+       "temp": 0.0,
+       "tint": 0.0,
+       "lift": 0.0,
+       "roll": 0.3
+      }
+     },
+     {
+      "name": "Warm Golden Ceremony",
+      "desc": "Honey warmth for outdoor golden-hour vows.",
+      "params": {
+       "exp": 0.04,
+       "contrast": 1.08,
+       "sat": 1.04,
+       "temp": 0.08,
+       "tint": 0.005,
+       "lift": 0.0,
+       "roll": 0.5
+      }
+     },
+     {
+      "name": "Bright Airy",
+      "desc": "High-key, clean, pastel-friendly.",
+      "params": {
+       "exp": 0.2,
+       "contrast": 0.92,
+       "sat": 0.92,
+       "temp": 0.0,
+       "tint": 0.0,
+       "lift": 0.05,
+       "roll": 0.55
+      }
+     },
+     {
+      "name": "Moody Candlelight",
+      "desc": "Deeper shadows and warm practicals for evening receptions.",
+      "params": {
+       "exp": -0.03,
+       "contrast": 1.18,
+       "sat": 1.02,
+       "temp": 0.06,
+       "tint": 0.0,
+       "lift": -0.01,
+       "roll": 0.4
+      }
+     },
+     {
+      "name": "Film Fade",
+      "desc": "Matte blacks and soft saturation, nostalgic film feel.",
+      "params": {
+       "exp": 0.02,
+       "contrast": 0.97,
+       "sat": 0.88,
+       "temp": 0.03,
+       "tint": 0.0,
+       "lift": 0.07,
+       "roll": 0.5
+      }
+     },
+     {
+      "name": "Pastel Garden",
+      "desc": "Gentle greens and sky, airy florals.",
+      "params": {
+       "exp": 0.1,
+       "contrast": 1.0,
+       "sat": 1.04,
+       "temp": 0.0,
+       "tint": 0.0,
+       "lift": 0.03,
+       "roll": 0.45,
+       "green": 0.06,
+       "sky": 0.05
+      }
+     },
+     {
+      "name": "Classic Black and White",
+      "desc": "Rich monochrome with smooth highlights.",
+      "params": {
+       "exp": 0.02,
+       "contrast": 1.15,
+       "sat": 0.0,
+       "temp": 0.0,
+       "tint": 0.0,
+       "lift": 0.0,
+       "roll": 0.45
+      }
+     }
+    ]
+   },
+   "kind": "lut",
+   "deliverables": [
+    "8 x .cube 33-point LUTs",
+    "Before/after preview image",
+    "Install guide for Resolve, Premiere and Final Cut"
+   ],
+   "license": "Personal and commercial use in your own video projects. No resale or redistribution of the LUT files."
+  }
+ },
+ "history": [
+  {
+   "week": [
+    2026,
+    41
+   ],
+   "date": "2026-10-11",
+   "key": "calc_listingprofit"
+  },
+  {
+   "week": [
+    2026,
+    41
+   ],
+   "date": "2026-10-11",
+   "key": "lut_wedding"
+  }
+ ]
+}

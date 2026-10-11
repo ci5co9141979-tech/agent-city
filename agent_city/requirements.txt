@@ -1,0 +1,7 @@
+reportlab
+openpyxl
+numpy
+pillow
+pypdf
+playwright
+anthropic
