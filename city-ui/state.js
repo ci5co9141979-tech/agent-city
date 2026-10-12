@@ -38,15 +38,15 @@ window.CITY_STATE = {
   /* ---- machine-managed: written by scripts/sync_state.py ---- */
   /* @@CITY_AUTO_START@@ */
   source: "workflow",
-  generatedAt: "2026-10-12T05:35:53Z",
+  generatedAt: "2026-10-12T21:32:57Z",
   stats: {
-    "shipped": 4,
+    "shipped": 5,
     "revenue": 0.0,
     "avgPrice": 24.0
   },
   lastRun: {
     "at": "2026-10-12",
-    "product": "Fitness & Wellness Coach Content & Planning Vault",
+    "product": "BreakEven - Digital Product Price & Profit Calculator",
     "kit": null,
     "run": null
   }
