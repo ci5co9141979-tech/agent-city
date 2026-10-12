@@ -37,18 +37,18 @@ window.CITY_STATE = {
 
   /* ---- machine-managed: written by scripts/sync_state.py ---- */
   /* @@CITY_AUTO_START@@ */
-  source: "demo",              // "demo" | "workflow" | "manual"
-  generatedAt: null,           // ISO timestamp of the last sync
+  source: "workflow",
+  generatedAt: "2026-10-12T05:35:53Z",
   stats: {
-    shipped: 0,                // products the city has shipped
-    revenue: 0,                // dollars collected (you keep this current)
-    avgPrice: 24               // your list price
+    "shipped": 4,
+    "revenue": 0.0,
+    "avgPrice": 24.0
   },
   lastRun: {
-    at: null,                  // ISO timestamp of the newest build
-    product: null,             // e.g. "Freelance Invoice Pack"
-    kit: null,                 // link to the download / store page
-    run: null                  // e.g. "agent-city-weekly #7"
+    "at": "2026-10-12",
+    "product": "Fitness & Wellness Coach Content & Planning Vault",
+    "kit": null,
+    "run": null
   }
   /* @@CITY_AUTO_END@@ */
 };

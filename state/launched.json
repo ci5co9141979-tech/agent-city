@@ -461,6 +461,104 @@
     "US Letter, print at 100%"
    ],
    "license": "Personal and classroom/homeschool use. No resale or redistribution of the files."
+  },
+  "vault_fitness": {
+   "category": "Template Vaults & Planners",
+   "name": "Fitness & Wellness Coach Content & Planning Vault",
+   "module": "template_vault",
+   "family": "template_vault",
+   "price": 29,
+   "buyer": "personal trainers and wellness coaches who need consistent content and a clear money system",
+   "angle": "A 12-month content calendar, 130+ fitness and wellness post ideas, client-friendly planner and budget tracker.",
+   "keywords": [
+    "fitness coach content calendar",
+    "personal trainer social media planner",
+    "wellness coach planner",
+    "gym content ideas",
+    "coach budget tracker"
+   ],
+   "spec": {
+    "title": "Fitness & Wellness Coach Vault",
+    "defaults": {
+     "business": "My Coaching Studio",
+     "topic": "strength training",
+     "goal": "build strength",
+     "product": "12-week coaching program",
+     "customer": "client"
+    },
+    "income": [
+     "1:1 coaching",
+     "Group programs",
+     "Online products",
+     "Other"
+    ],
+    "expenses": [
+     "Software & apps",
+     "Advertising",
+     "Studio / gym rent",
+     "Insurance & certifications",
+     "Equipment",
+     "Education",
+     "Other"
+    ],
+    "ideas": {
+     "Educate": [
+      "The 3 exercises everyone should learn first",
+      "How to warm up in 5 minutes",
+      "Protein: how much do you actually need?",
+      "How to progress a workout without injury",
+      "Form check: the squat",
+      "How to start when you're out of shape"
+     ],
+     "Behind the scenes": [
+      "My training week",
+      "Programming a client workout",
+      "What I eat in a day (no rules)",
+      "Gym setup tour",
+      "How I plan client check-ins",
+      "A coach's morning routine"
+     ],
+     "Social proof": [
+      "Client transformation story (with permission)",
+      "Client win: first pull-up",
+      "Check-in message of the week",
+      "Before and after habits, not just photos",
+      "A client's 12-week journey",
+      "Review roundup"
+     ],
+     "Offer / promo": [
+      "Program launch: what's inside",
+      "Who this program is for",
+      "Founding-member pricing",
+      "Free 7-day starter plan",
+      "Q&A: what to expect in week 1",
+      "Last spots this month"
+     ],
+     "Personal story": [
+      "Why I became a coach",
+      "My own setback and comeback",
+      "What fitness taught me about patience",
+      "My first gym memory",
+      "A mistake I made as a new coach",
+      "What 'healthy' means to me now"
+     ],
+     "Engage / community": [
+      "Poll: morning or evening workouts?",
+      "Ask me anything: training",
+      "Share your favorite workout song",
+      "This or that: cardio edition",
+      "What's your fitness goal this month?",
+      "Challenge: 10-minute daily walk"
+     ]
+    }
+   },
+   "kind": "vault",
+   "deliverables": [
+    "Planning_Vault.xlsx (Google Sheets compatible)",
+    "Notion-importable CSVs",
+    "Caption kit"
+   ],
+   "license": "Personal and business use. No resale or redistribution of the files."
   }
  },
  "history": [
@@ -487,6 +585,14 @@
    ],
    "date": "2026-10-11",
    "key": "print_reading"
+  },
+  {
+   "week": [
+    2026,
+    42
+   ],
+   "date": "2026-10-12",
+   "key": "vault_fitness"
   }
  ]
 }
