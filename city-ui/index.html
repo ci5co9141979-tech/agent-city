@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Agent City — Live</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="app">
+  <canvas id="city"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="hud top">
+    <div class="brand">
+      <div class="brand-mark">🏙️</div>
+      <div class="brand-text">
+        <h1 id="city-name">Agent City</h1>
+        <p id="tagline">Loading…</p>
+      </div>
+      <span class="badge off" id="live-badge">● Demo data</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span class="k">Products shipped</span><span class="v" id="stat-shipped">0</span></div>
+      <div class="stat"><span class="k">Est. revenue</span><span class="v" id="stat-revenue">$0</span></div>
+      <div class="stat"><span class="k">Next build</span><span class="v" id="stat-next">—</span></div>
+    </div>
+  </header>
+
+  <div class="log" id="log" aria-live="polite"></div>
+
+  <footer class="hud bottom">
+    <button id="run-week" class="btn primary">▶ Run an episode</button>
+    <button id="toggle-time" class="btn">🌗 Time</button>
+    <a id="store" class="btn primary" href="#" hidden target="_blank" rel="noopener">🛒 Store</a>
+    <span class="hint" id="hint">Click a building to inspect it</span>
+  </footer>
+
+  <aside class="panel" id="panel" aria-hidden="true">
+    <button class="panel-close" id="panel-close" aria-label="Close">✕</button>
+    <div class="panel-icon" id="panel-icon">🏛️</div>
+    <h2 id="panel-name">—</h2>
+    <div class="panel-role" id="panel-role">—</div>
+    <p class="panel-desc" id="panel-desc">—</p>
+    <dl class="panel-meta">
+      <div><dt>Does</dt><dd id="panel-last">—</dd></div>
+      <div><dt>Toolbox</dt><dd id="panel-stat">—</dd></div>
+    </dl>
+  </aside>
+</div>
+
+<script src="city-data.js"></script>
+<script src="state.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

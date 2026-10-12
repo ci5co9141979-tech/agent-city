@@ -1,0 +1,22 @@
+# ============================================================
+# AGENT CITY — paste this step into .github/workflows/city.yml
+# ============================================================
+# Put it AFTER your product has been built and the launch kit is on disk,
+# and BEFORE the step that commits the "already launched" record.
+# Keep the indentation aligned with the other steps in your job.
+
+      - name: Update the city UI's live numbers
+        run: python3 city-ui/scripts/sync_state.py
+
+# ------------------------------------------------------------
+# Then, after this step, the workflow usually commits its record back.
+# If your commit step uses `git add -A` (or adds the city-ui folder),
+# the refreshed state.js goes up with it and your dashboard updates itself.
+#
+# If your commit step names files explicitly, make sure it includes:
+#     city-ui/state.js
+#     city-ui/state.json
+#
+# Optional: also pass your store link the first time:
+#     run: python3 city-ui/scripts/sync_state.py --store-url https://you.gumroad.com
+# ------------------------------------------------------------
