@@ -25,7 +25,7 @@ window.CITY_STATE = {
   // The 🛒 button appears in the HUD once url is filled in.
   store: {
     label: "Buy on Gumroad",
-    url: ""
+    url: "https://ci5co.gumroad.com/"
   },
 
   // Per-agent notes shown in the inspector ("Does").
