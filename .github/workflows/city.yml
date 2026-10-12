@@ -17,8 +17,33 @@ jobs:
       - name: Build this week's product (Muse picks it, the team builds it)
         run: python run.py --weekly
         env: {ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}"}
-      - name: Update the city UI (live numbers)
-        run: python3 city-ui/scripts/sync_state.py
+      - name: Update the city UI (live numbers from state/launched.json)
+        run: |
+          python3 - <<'PY'
+          import json, subprocess, pathlib
+          try:
+              d = json.loads(pathlib.Path("state/launched.json").read_text(encoding="utf-8"))
+          except Exception:
+              d = {}
+          entries = d.get("entries") or {}
+          hist = d.get("history") or []
+          shipped = len(entries)
+          last = hist[-1] if hist else {}
+          key = last.get("key")
+          name = (entries.get(key) or {}).get("name", "")
+          cmd = ["python3", "city-ui/scripts/sync_state.py"]
+          if shipped:
+              cmd += ["--shipped", str(shipped)]
+          if name:
+              cmd += ["--product", name]
+          subprocess.run(cmd, check=False)
+          at = last.get("date")
+          if at:
+              for f in ("city-ui/state.js", "city-ui/state.json"):
+                  p = pathlib.Path(f)
+                  if p.is_file():
+                      p.write_text(p.read_text(encoding="utf-8").replace('"at": null', '"at": ' + json.dumps(at), 1), encoding="utf-8")
+          PY
       - name: Remember what was launched
         run: |
           git config user.name "agent-city"; git config user.email "agent-city@users.noreply.github.com"
