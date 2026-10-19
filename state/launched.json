@@ -681,6 +681,117 @@
     "README with setup notes"
    ],
    "license": "Use for your own business. No resale or redistribution of the app."
+  },
+  "calc_creatorrate": {
+   "category": "AI Micro Apps",
+   "name": "CreatorRate - Sponsored Post Rate Estimator",
+   "module": "calc_app",
+   "family": "micro_app",
+   "price": 47,
+   "buyer": "small creators and influencers who guess at what to charge brands",
+   "angle": "Turn followers, engagement and deliverables into a defensible rate range and a package price.",
+   "keywords": [
+    "influencer rate calculator",
+    "sponsored post pricing",
+    "creator rate card",
+    "brand deal calculator",
+    "ugc pricing"
+   ],
+   "spec": {
+    "title": "CreatorRate",
+    "tagline": "A starting rate for brand deals, with a range you can defend.",
+    "notes": "Rule-of-thumb estimator, not an industry standard. Change the base rate and benchmark to match what your niche really pays; real deals vary widely.",
+    "inputs": [
+     {
+      "id": "followers",
+      "label": "Followers on the platform",
+      "value": 25000,
+      "step": 100
+     },
+     {
+      "id": "base_k",
+      "label": "Base rate per 1,000 followers",
+      "value": 10,
+      "prefix": "$",
+      "step": 0.5
+     },
+     {
+      "id": "eng",
+      "label": "Your engagement rate %",
+      "value": 3.5,
+      "suffix": "%",
+      "step": 0.1
+     },
+     {
+      "id": "bench",
+      "label": "Benchmark engagement for your niche %",
+      "value": 2,
+      "suffix": "%",
+      "step": 0.1
+     },
+     {
+      "id": "niche",
+      "label": "Niche multiplier (1 = general)",
+      "value": 1,
+      "step": 0.1
+     },
+     {
+      "id": "usage",
+      "label": "Brand usage rights add-on %",
+      "value": 0,
+      "suffix": "%",
+      "step": 5
+     },
+     {
+      "id": "posts",
+      "label": "Posts in package",
+      "value": 3,
+      "step": 1
+     },
+     {
+      "id": "bundle",
+      "label": "Bundle discount %",
+      "value": 10,
+      "suffix": "%",
+      "step": 1
+     }
+    ],
+    "vars": [
+     {
+      "id": "per",
+      "expr": "followers / 1000 * base_k * Math.min(Math.max(eng / bench, 0.5), 2.5) * niche * (1 + usage / 100)"
+     }
+    ],
+    "outputs": [
+     {
+      "label": "Suggested rate per post",
+      "expr": "per",
+      "fmt": "money",
+      "big": true
+     },
+     {
+      "label": "Low end of range (-25%)",
+      "expr": "per * 0.75",
+      "fmt": "money"
+     },
+     {
+      "label": "High end of range (+25%)",
+      "expr": "per * 1.25",
+      "fmt": "money"
+     },
+     {
+      "label": "Package price",
+      "expr": "per * posts * (1 - bundle / 100)",
+      "fmt": "money"
+     }
+    ]
+   },
+   "kind": "calc",
+   "deliverables": [
+    "Single-file calculator app (works offline in any browser)",
+    "README with setup notes"
+   ],
+   "license": "Use for your own business. No resale or redistribution of the app."
   }
  },
  "history": [
@@ -723,6 +834,14 @@
    ],
    "date": "2026-10-12",
    "key": "calc_breakeven"
+  },
+  {
+   "week": [
+    2026,
+    43
+   ],
+   "date": "2026-10-19",
+   "key": "calc_creatorrate"
   }
  ]
 }

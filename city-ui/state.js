@@ -38,15 +38,15 @@ window.CITY_STATE = {
   /* ---- machine-managed: written by scripts/sync_state.py ---- */
   /* @@CITY_AUTO_START@@ */
   source: "workflow",
-  generatedAt: "2026-10-12T21:32:57Z",
+  generatedAt: "2026-10-19T18:58:47Z",
   stats: {
-    "shipped": 5,
+    "shipped": 6,
     "revenue": 0.0,
     "avgPrice": 24.0
   },
   lastRun: {
     "at": "2026-10-12",
-    "product": "BreakEven - Digital Product Price & Profit Calculator",
+    "product": "CreatorRate - Sponsored Post Rate Estimator",
     "kit": null,
     "run": null
   }
