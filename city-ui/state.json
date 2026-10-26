@@ -1,14 +1,14 @@
 {
   "source": "workflow",
-  "generatedAt": "2026-10-19T18:58:47Z",
+  "generatedAt": "2026-10-26T19:01:07Z",
   "stats": {
-    "shipped": 6,
+    "shipped": 7,
     "revenue": 0.0,
     "avgPrice": 24.0
   },
   "lastRun": {
     "at": "2026-10-12",
-    "product": "CreatorRate - Sponsored Post Rate Estimator",
+    "product": "Travel & Adventure LUT Pack (8 looks, .cube)",
     "kit": null,
     "run": null
   }

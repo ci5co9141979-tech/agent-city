@@ -792,6 +792,147 @@
     "README with setup notes"
    ],
    "license": "Use for your own business. No resale or redistribution of the app."
+  },
+  "lut_travel": {
+   "category": "Niche Presets & Video LUTs",
+   "name": "Travel & Adventure LUT Pack (8 looks, .cube)",
+   "module": "lut_niche",
+   "family": "luts",
+   "price": 24,
+   "buyer": "travel vloggers and adventure filmmakers editing in DaVinci Resolve, Premiere or Final Cut",
+   "angle": "Eight looks for beaches, mountains, deserts and cities: punchy skies, safe skin, no crushed shadows.",
+   "keywords": [
+    "travel LUT",
+    "adventure LUT",
+    "vlog LUT pack",
+    "drone travel LUT",
+    "cinematic travel color grade"
+   ],
+   "spec": {
+    "pack_name": "Travel & Adventure LUT Pack",
+    "prefix": "TRV",
+    "intro": "Tuned for outdoor light: bright skies, mixed shade and golden hours.",
+    "looks": [
+     {
+      "name": "Vivid Journey",
+      "desc": "Colorful, punchy all-rounder for daylight.",
+      "params": {
+       "exp": 0.02,
+       "contrast": 1.12,
+       "sat": 1.14,
+       "temp": 0.0,
+       "tint": 0.0,
+       "lift": 0.0,
+       "roll": 0.5,
+       "sky": 0.12,
+       "green": 0.08
+      }
+     },
+     {
+      "name": "Sunset Roads",
+      "desc": "Warm sunsets with protected highlights.",
+      "params": {
+       "exp": 0.0,
+       "contrast": 1.12,
+       "sat": 1.1,
+       "temp": 0.1,
+       "tint": 0.01,
+       "lift": 0.0,
+       "roll": 0.55,
+       "sky": 0.06
+      }
+     },
+     {
+      "name": "Tropical Blue",
+      "desc": "Clean saturated sky and water tones.",
+      "params": {
+       "exp": 0.04,
+       "contrast": 1.1,
+       "sat": 1.12,
+       "temp": -0.02,
+       "tint": 0.0,
+       "lift": 0.0,
+       "roll": 0.5,
+       "sky": 0.2,
+       "green": 0.06
+      }
+     },
+     {
+      "name": "Desert Warm",
+      "desc": "Golden sand and warm shadow, skin-safe.",
+      "params": {
+       "exp": 0.03,
+       "contrast": 1.1,
+       "sat": 1.04,
+       "temp": 0.09,
+       "tint": 0.0,
+       "lift": 0.0,
+       "roll": 0.5,
+       "wood": 0.08
+      }
+     },
+     {
+      "name": "Alpine Cool",
+      "desc": "Crisp cool mountain air, clean snow whites.",
+      "params": {
+       "exp": 0.05,
+       "contrast": 1.14,
+       "sat": 1.02,
+       "temp": -0.07,
+       "tint": 0.0,
+       "lift": 0.0,
+       "roll": 0.5,
+       "sky": 0.1
+      }
+     },
+     {
+      "name": "City Night",
+      "desc": "Lifted shadows and controlled highlights for neon and street lights.",
+      "params": {
+       "exp": 0.02,
+       "contrast": 1.15,
+       "sat": 1.08,
+       "temp": 0.0,
+       "tint": 0.0,
+       "lift": 0.03,
+       "roll": 0.6
+      }
+     },
+     {
+      "name": "Documentary Neutral",
+      "desc": "Honest color, gentle contrast.",
+      "params": {
+       "exp": 0.03,
+       "contrast": 1.06,
+       "sat": 1.0,
+       "temp": 0.0,
+       "tint": 0.0,
+       "lift": 0.0,
+       "roll": 0.3
+      }
+     },
+     {
+      "name": "Soft Nostalgia",
+      "desc": "Faded warm memories, relaxed contrast.",
+      "params": {
+       "exp": 0.03,
+       "contrast": 0.97,
+       "sat": 0.9,
+       "temp": 0.05,
+       "tint": 0.0,
+       "lift": 0.06,
+       "roll": 0.5
+      }
+     }
+    ]
+   },
+   "kind": "lut",
+   "deliverables": [
+    "8 x .cube 33-point LUTs",
+    "Before/after preview image",
+    "Install guide for Resolve, Premiere and Final Cut"
+   ],
+   "license": "Personal and commercial use in your own video projects. No resale or redistribution of the LUT files."
   }
  },
  "history": [
@@ -842,6 +983,14 @@
    ],
    "date": "2026-10-19",
    "key": "calc_creatorrate"
+  },
+  {
+   "week": [
+    2026,
+    44
+   ],
+   "date": "2026-10-26",
+   "key": "lut_travel"
   }
  ]
 }
