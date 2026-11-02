@@ -38,15 +38,15 @@ window.CITY_STATE = {
   /* ---- machine-managed: written by scripts/sync_state.py ---- */
   /* @@CITY_AUTO_START@@ */
   source: "workflow",
-  generatedAt: "2026-10-26T19:01:07Z",
+  generatedAt: "2026-11-02T22:06:08Z",
   stats: {
-    "shipped": 7,
+    "shipped": 8,
     "revenue": 0.0,
     "avgPrice": 24.0
   },
   lastRun: {
     "at": "2026-10-12",
-    "product": "Travel & Adventure LUT Pack (8 looks, .cube)",
+    "product": "Kids Chore & Responsibility Charts Printable Set",
     "kit": null,
     "run": null
   }

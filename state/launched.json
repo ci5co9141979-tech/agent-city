@@ -933,6 +933,167 @@
     "Install guide for Resolve, Premiere and Final Cut"
    ],
    "license": "Personal and commercial use in your own video projects. No resale or redistribution of the LUT files."
+  },
+  "print_chores": {
+   "category": "Classroom & Homeschool Printables",
+   "name": "Kids Chore & Responsibility Charts Printable Set",
+   "module": "printable_pack",
+   "family": "printables",
+   "price": 12,
+   "buyer": "parents building daily routines and responsibility at home",
+   "angle": "Weekly chore chart, morning and bedtime routines, allowance log, monthly planner and family agreement.",
+   "keywords": [
+    "chore chart printable",
+    "kids routine chart",
+    "allowance tracker",
+    "morning routine checklist",
+    "responsibility chart"
+   ],
+   "spec": {
+    "pack_name": "Kids Chore & Responsibility Charts",
+    "files": [
+     {
+      "file": "1_Weekly_Chore_Chart.pdf",
+      "pages": [
+       {
+        "type": "grid",
+        "title": "Weekly Chore Chart",
+        "sub": "Color a circle when the chore is done.",
+        "first": "Chore",
+        "cols": [
+         "Mon",
+         "Tue",
+         "Wed",
+         "Thu",
+         "Fri",
+         "Sat",
+         "Sun"
+        ],
+        "items": [
+         "Make bed",
+         "Tidy bedroom",
+         "Set the table",
+         "Clear dishes",
+         "Feed pet",
+         "Take out trash",
+         "Put away laundry",
+         "Help with dinner"
+        ]
+       }
+      ]
+     },
+     {
+      "file": "2_Routine_Checklists.pdf",
+      "pages": [
+       {
+        "type": "checklist",
+        "title": "Morning Routine",
+        "sections": [
+         {
+          "h": "Before school",
+          "items": [
+           "Get dressed",
+           "Eat breakfast",
+           "Brush teeth",
+           "Pack backpack",
+           "Shoes and coat on"
+          ]
+         }
+        ]
+       },
+       {
+        "type": "checklist",
+        "title": "Bedtime Routine",
+        "sections": [
+         {
+          "h": "Before bed",
+          "items": [
+           "Tidy toys",
+           "Bath or wash up",
+           "Pajamas",
+           "Brush teeth",
+           "Read a story",
+           "Lights out"
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "file": "3_Allowance_Log.pdf",
+      "pages": [
+       {
+        "type": "log",
+        "title": "Allowance & Savings Log",
+        "cols": [
+         [
+          "Date",
+          1
+         ],
+         [
+          "What I earned for",
+          3
+         ],
+         [
+          "Earned",
+          1
+         ],
+         [
+          "Spent",
+          1
+         ],
+         [
+          "Saved",
+          1
+         ],
+         [
+          "Balance",
+          1.2
+         ]
+        ],
+        "rows": 24
+       }
+      ]
+     },
+     {
+      "file": "4_Monthly_Chore_Planner.pdf",
+      "pages": [
+       {
+        "type": "month",
+        "title": "Monthly Chore Planner",
+        "sub": "Write the chore of the day in each box."
+       }
+      ]
+     },
+     {
+      "file": "5_Family_Agreement.pdf",
+      "pages": [
+       {
+        "type": "lined",
+        "title": "Our Family Responsibility Agreement",
+        "prompts": [
+         "I agree to do these chores",
+         "The reward for finishing them is",
+         "If I forget, the plan is",
+         "Signed (child and parent)"
+        ],
+        "lines_each": 3
+       }
+      ]
+     }
+    ]
+   },
+   "kind": "printable",
+   "deliverables": [
+    "Weekly Chore Chart (PDF)",
+    "Routine Checklists (PDF)",
+    "Allowance Log (PDF)",
+    "Monthly Chore Planner (PDF)",
+    "Family Agreement (PDF)",
+    "US Letter, print at 100%"
+   ],
+   "license": "Personal and classroom/homeschool use. No resale or redistribution of the files."
   }
  },
  "history": [
@@ -991,6 +1152,14 @@
    ],
    "date": "2026-10-26",
    "key": "lut_travel"
+  },
+  {
+   "week": [
+    2026,
+    45
+   ],
+   "date": "2026-11-02",
+   "key": "print_chores"
   }
  ]
 }
