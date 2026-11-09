@@ -1094,6 +1094,104 @@
     "US Letter, print at 100%"
    ],
    "license": "Personal and classroom/homeschool use. No resale or redistribution of the files."
+  },
+  "vault_realtor": {
+   "category": "Template Vaults & Planners",
+   "name": "Real Estate Agent Content & Planning Vault",
+   "module": "template_vault",
+   "family": "template_vault",
+   "price": 29,
+   "buyer": "real estate agents who need steady local content and a simple business tracker",
+   "angle": "A 12-month content calendar, 130+ real estate post ideas, weekly planner and commission-aware budget tracker.",
+   "keywords": [
+    "real estate content calendar",
+    "realtor social media planner",
+    "real estate post ideas",
+    "agent marketing planner",
+    "realtor budget tracker"
+   ],
+   "spec": {
+    "title": "Real Estate Agent Vault",
+    "defaults": {
+     "business": "My Real Estate Team",
+     "topic": "local real estate",
+     "goal": "buy a home",
+     "product": "free home valuation",
+     "customer": "buyer or seller"
+    },
+    "income": [
+     "Buyer commissions",
+     "Seller commissions",
+     "Referral fees",
+     "Other"
+    ],
+    "expenses": [
+     "MLS & association dues",
+     "Marketing & ads",
+     "CRM & software",
+     "Photography & staging",
+     "Licensing & education",
+     "Auto & travel",
+     "Other"
+    ],
+    "ideas": {
+     "Educate": [
+      "First-time buyer: the real costs beyond the down payment",
+      "How to read a home listing",
+      "What happens at a home inspection",
+      "How pricing a home really works",
+      "Buyer vs seller market in plain English",
+      "Moving checklist"
+     ],
+     "Behind the scenes": [
+      "Prepping a listing photo shoot",
+      "A day in my life as an agent",
+      "Touring a new listing",
+      "How I stage a room",
+      "Open house setup",
+      "Closing day"
+     ],
+     "Social proof": [
+      "Just sold: the story",
+      "Client review spotlight",
+      "Case study: a tough negotiation",
+      "Keys handed over",
+      "Local stats: homes sold this month",
+      "Thank-you from a happy buyer"
+     ],
+     "Offer / promo": [
+      "Free home valuation offer",
+      "Seller prep guide download",
+      "Upcoming open house",
+      "New listing announcement",
+      "Buyer consultation: what to expect",
+      "Neighborhood guide"
+     ],
+     "Personal story": [
+      "Why I got into real estate",
+      "My first closing",
+      "What I love about this neighborhood",
+      "A lesson from a deal that fell through",
+      "My family and community",
+      "What home means to me"
+     ],
+     "Engage / community": [
+      "Poll: what matters most in a home?",
+      "Guess the listing price",
+      "Local favorite: best coffee shop",
+      "Ask me anything: buying",
+      "This or that: kitchen edition",
+      "Community event round-up"
+     ]
+    }
+   },
+   "kind": "vault",
+   "deliverables": [
+    "Planning_Vault.xlsx (Google Sheets compatible)",
+    "Notion-importable CSVs",
+    "Caption kit"
+   ],
+   "license": "Personal and business use. No resale or redistribution of the files."
   }
  },
  "history": [
@@ -1160,6 +1258,14 @@
    ],
    "date": "2026-11-02",
    "key": "print_chores"
+  },
+  {
+   "week": [
+    2026,
+    46
+   ],
+   "date": "2026-11-09",
+   "key": "vault_realtor"
   }
  ]
 }

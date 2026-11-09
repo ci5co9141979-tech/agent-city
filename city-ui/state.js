@@ -38,15 +38,15 @@ window.CITY_STATE = {
   /* ---- machine-managed: written by scripts/sync_state.py ---- */
   /* @@CITY_AUTO_START@@ */
   source: "workflow",
-  generatedAt: "2026-11-02T22:06:08Z",
+  generatedAt: "2026-11-09T22:52:26Z",
   stats: {
-    "shipped": 8,
+    "shipped": 9,
     "revenue": 0.0,
     "avgPrice": 24.0
   },
   lastRun: {
     "at": "2026-10-12",
-    "product": "Kids Chore & Responsibility Charts Printable Set",
+    "product": "Real Estate Agent Content & Planning Vault",
     "kit": null,
     "run": null
   }
