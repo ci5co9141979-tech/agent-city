@@ -1192,6 +1192,121 @@
     "Caption kit"
    ],
    "license": "Personal and business use. No resale or redistribution of the files."
+  },
+  "calc_launchmath": {
+   "category": "AI Micro Apps",
+   "name": "LaunchMath - Course Launch Revenue Planner",
+   "module": "calc_app",
+   "family": "micro_app",
+   "price": 47,
+   "buyer": "course creators planning a launch who need realistic revenue and break-even numbers",
+   "angle": "Model visitors, conversion, price, refunds and costs to see revenue, profit and students needed.",
+   "keywords": [
+    "course launch calculator",
+    "online course revenue",
+    "launch planner",
+    "conversion rate calculator",
+    "course pricing"
+   ],
+   "spec": {
+    "title": "LaunchMath",
+    "tagline": "Model your launch before you spend a dollar on it.",
+    "notes": "Planning tool. Conversion rates vary widely; start conservative and replace the example numbers with your own results.",
+    "inputs": [
+     {
+      "id": "visitors",
+      "label": "Sales page visitors",
+      "value": 3000,
+      "step": 50
+     },
+     {
+      "id": "conv",
+      "label": "Conversion rate %",
+      "value": 2,
+      "suffix": "%",
+      "step": 0.1
+     },
+     {
+      "id": "price",
+      "label": "Course price",
+      "value": 100,
+      "prefix": "$",
+      "step": 1
+     },
+     {
+      "id": "refund",
+      "label": "Refund rate %",
+      "value": 5,
+      "suffix": "%",
+      "step": 0.5
+     },
+     {
+      "id": "plat",
+      "label": "Platform + payment fees %",
+      "value": 8,
+      "suffix": "%",
+      "step": 0.1
+     },
+     {
+      "id": "ads",
+      "label": "Ad spend",
+      "value": 300,
+      "prefix": "$",
+      "step": 10
+     },
+     {
+      "id": "fixed",
+      "label": "Other launch costs",
+      "value": 300,
+      "prefix": "$",
+      "step": 10
+     }
+    ],
+    "vars": [
+     {
+      "id": "buyers",
+      "expr": "visitors * conv / 100"
+     },
+     {
+      "id": "netper",
+      "expr": "price * (1 - plat / 100)"
+     }
+    ],
+    "outputs": [
+     {
+      "label": "Buyers",
+      "expr": "buyers",
+      "fmt": "num"
+     },
+     {
+      "label": "Net revenue after refunds and fees",
+      "expr": "buyers * (1 - refund / 100) * netper",
+      "fmt": "money"
+     },
+     {
+      "label": "Profit",
+      "expr": "buyers * (1 - refund / 100) * netper - ads - fixed",
+      "fmt": "money",
+      "big": true
+     },
+     {
+      "label": "Students needed to break even",
+      "expr": "netper > 0 ? Math.ceil((ads + fixed) / (netper * (1 - refund / 100))) : 0",
+      "fmt": "int"
+     },
+     {
+      "label": "Cost per buyer",
+      "expr": "buyers > 0 ? (ads + fixed) / buyers : 0",
+      "fmt": "money"
+     }
+    ]
+   },
+   "kind": "calc",
+   "deliverables": [
+    "Single-file calculator app (works offline in any browser)",
+    "README with setup notes"
+   ],
+   "license": "Use for your own business. No resale or redistribution of the app."
   }
  },
  "history": [
@@ -1266,6 +1381,14 @@
    ],
    "date": "2026-11-09",
    "key": "vault_realtor"
+  },
+  {
+   "week": [
+    2026,
+    47
+   ],
+   "date": "2026-11-16",
+   "key": "calc_launchmath"
   }
  ]
 }

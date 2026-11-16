@@ -38,15 +38,15 @@ window.CITY_STATE = {
   /* ---- machine-managed: written by scripts/sync_state.py ---- */
   /* @@CITY_AUTO_START@@ */
   source: "workflow",
-  generatedAt: "2026-11-09T22:52:26Z",
+  generatedAt: "2026-11-16T22:43:30Z",
   stats: {
-    "shipped": 9,
+    "shipped": 10,
     "revenue": 0.0,
     "avgPrice": 24.0
   },
   lastRun: {
     "at": "2026-10-12",
-    "product": "Real Estate Agent Content & Planning Vault",
+    "product": "LaunchMath - Course Launch Revenue Planner",
     "kit": null,
     "run": null
   }
